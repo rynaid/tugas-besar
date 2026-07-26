@@ -1,26 +1,42 @@
 # 📱 Eat In Loc Polines - Real-Time Canteen Ordering System
 
-> Tugas Akhir (UAS) - Mobile Programming
+> Final Project (UAS) - Mobile Programming Course
 
-Aplikasi sistem pemesanan makanan dan manajemen antrian *real-time* yang dirancang khusus untuk Kantin Kodok POLINES. Proyek ini menerapkan pola arsitektur **Singleton State Management** dan integrasi **Cloud Backend (Supabase)**, memungkinkan sinkronisasi data antar perangkat mahasiswa dan panel admin dapur secara instan dan efisien.
+A real-time food ordering and kitchen queue management application developed for the "Kantin Kodok" canteen at Politeknik Negeri Semarang (POLINES). This project focuses on high-performance mobile state management and seamless cloud database integration using Flutter and Supabase.
 
 ---
 
-## 🚀 Features
+## 🎨 UI/UX Design
+Explore the full design system, wireframes, and interactive prototypes here:
+👉 [Eat In Loc - Figma Design System](https://www.figma.com/design/MQcVQfrRmXDdZozhbrbTJX/tugas-besar-mobile?node-id=0-1&t=dZnXyOmnnlSmghGL-1)
 
-* **Real-Time Queue Management**: Menggunakan arsitektur *reactive state management* untuk melacak status pesanan secara *live*, memastikan sinkronisasi instan antara aplikasi mahasiswa dan panel dapur.
-* **Interactive Spatials & Routing**: Integrasi `FlutterMap` berbasis OpenStreetMap dengan akurasi koordinat kampus POLINES, memberikan navigasi spasial yang presisi bagi mahasiswa.
-* **Digital Transaction Sandbox**: Simulasi sistem pembayaran QRIS interaktif yang memberikan pengalaman transaksi digital yang aman, cepat, dan modern.
-* **Unified Role-Based Access**: Implementasi otentikasi Supabase Auth yang memisahkan otoritas antara akun *Mahasiswa* (katalog & pemesanan) dan *Admin Dapur* (pemrosesan & manajemen status antrian).
+---
+
+## 🚀 Key Features
+
+* **Real-Time Queue Management**: Implements a reactive Singleton State Management pattern to ensure synchronized order tracking between student devices and the kitchen admin panel without network latency.
+* **Interactive Spatials & Routing**: Features an integrated `FlutterMap` powered by OpenStreetMap, calibrated with precise campus coordinates to provide students with accurate spatial guidance.
+* **Digital Transaction Sandbox**: Includes an interactive QRIS digital payment simulation modal to provide a modern and secure user checkout experience.
+* **Role-Based Access Control (RBAC)**: Secure authentication system utilizing Supabase Auth, dynamically segregating application permissions for `Mahasiswa` (Customers) and `Admin Dapur` (Kitchen Merchants).
+
+---
+
+## 🏗️ System Architecture
+
+The application follows a modular architecture designed to minimize cloud request overhead:
+
+* **Presentation Layer**: Flutter Mobile Framework (UI/UX).
+* **Sync Layer**: Local Singleton State (Real-time data stream for orders).
+* **Storage Layer**: Supabase Cloud Database (User Auth, Profile Management, and Menu Catalog).
 
 ---
 
 ## 🛠️ Requirements & Installation
 
-Pastikan Anda telah menginstal Flutter SDK dan Git di perangkat Anda.
+Ensure you have the Flutter SDK and Git installed on your system.
 
-1. Clone repositori ini:
-
+1. **Clone the repository**:
+   
 ```bash
-git clone [https://github.com/rynaid/flutter-RPL-Jobsheet.git](https://github.com/rynaid/flutter-RPL-Jobsheet.git)
-cd flutter-RPL-Jobsheet/eat_in_loc-main
+   git clone [https://github.com/rynaid/flutter-RPL-Jobsheet.git](https://github.com/rynaid/flutter-RPL-Jobsheet.git)
+   cd flutter-RPL-Jobsheet/eat_in_loc-main
