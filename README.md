@@ -8,7 +8,7 @@ A real-time food ordering and kitchen queue management application developed for
 
 ## 🎨 UI/UX Design
 Explore the full design system, wireframes, and interactive prototypes here:
-👉 [Eat In Loc - Figma Design System](https://www.figma.com/design/MQcVQfrRmXDdZozhbrbTJX/tugas-besar-mobile?node-id=0-1&t=dZnXyOmnnlSmghGL-1)
+ [Eat In Loc - Figma Design System](https://www.figma.com/design/MQcVQfrRmXDdZozhbrbTJX/tugas-besar-mobile?node-id=0-1&t=dZnXyOmnnlSmghGL-1)
 
 ---
 
